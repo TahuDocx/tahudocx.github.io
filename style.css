@@ -11,14 +11,27 @@ body {
 }
 
 .wrapper {
-    max-width: 1240px;
+    max-width: 90%;
     margin: 0 100px;
 }
 
 header {
     padding: 15px 0;
     width: 100%;
-    background-color: #383431;
+    background: #383431;
+    position: fixed;
+    top: 0;
+    transition: all 500ms ease;
+    z-index: 100;
+}
+
+header.scrolled {
+    background: #383431;
+    opacity: 0.9;
+    padding: 7px 0;
+    border-radius: 0 0 8px 8px;
+    transition: all 500ms ease;
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
 }
 
 nav .logo {
@@ -28,10 +41,15 @@ nav .logo {
     color: #F1F1F1;
 }
 
+section.filler {
+    background: #72C2A9;
+    height: 89px;
+}
+
 section.hero-section {
-    background-color: #72C2A9;
+    background: #72C2A9;
     height: 566px;
-    /* margin: auto; */
+    /* margin-top: 89px; */
 }
 
 .hero {
@@ -104,6 +122,80 @@ section.hero-section {
 
 .video iframe {
     width: 1065px;
-    height: 585px;
+    height: 580px;
     margin: auto auto;
+}
+
+section.profile-container {
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 30px;
+    padding: 2px;
+    background: #EC9B26;
+}
+
+.profile .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid #DED6C8;
+}
+
+.profile .card .media-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .card .media-icons img {
+    width: 25px;
+    color: #563B2A;
+}
+
+.profile .card {
+    background: #DED6C8;
+    border-radius: 15px;
+    margin: 15px auto;
+}
+
+.profile .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.profile .card .name-contact {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+
+    color: #563B2A;
+    margin-top: 15px;
+}
+
+.profile .card .name-contact .name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.profile {
+    width: 1065px;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }

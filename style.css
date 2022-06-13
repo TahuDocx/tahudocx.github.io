@@ -26,8 +26,7 @@ header {
 }
 
 header.scrolled {
-    background: #383431;
-    opacity: 0.9;
+    background: #383431E5;
     padding: 7px 0;
     border-radius: 0 0 8px 8px;
     transition: all 500ms ease;
@@ -117,7 +116,7 @@ section.hero-section {
 }
 
 .video {
-    height: 585px;
+    padding: 25px 0;
 }
 
 .video iframe {
@@ -127,10 +126,12 @@ section.hero-section {
 }
 
 section.profile-container {
-    padding: 50px 0;
+    padding: 25px 0;
     align-items: center;
     justify-content: center;
     display: flex;
+    /* height: 485px; */
+    /* background: #72C2A9; */
 }
 
 .profile .card .image {
@@ -194,8 +195,22 @@ section.profile-container {
     font-size: 20px;
 }
 
-.profile {
+/* .profile {
     width: 1065px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+} */
+
+.profile .vline {
+    width: 10px;
+    height: 332px;
+    border-radius: 5px;
+    background: #BD9965;
+    margin: auto auto;
+}
+
+.swiper {
+    width: 90%;
+    height: 100%;
+    padding: 20px 0;
 }

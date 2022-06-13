@@ -47,13 +47,10 @@ section.filler {
 
 section.hero-section {
     background: #72C2A9;
-    height: 566px;
-    /* margin-top: 89px; */
 }
 
 .hero {
     padding: 50px 0;
-    height: 566px;
 }
 
 .heroo {
@@ -115,14 +112,19 @@ section.hero-section {
     margin-bottom: 48px;
 }
 
-.video {
+section.video-section {
+    background: #2F433D;
     padding: 25px 0;
 }
 
+.video {
+    padding: 25px 25px;
+    background: #72C2A9;
+}
+
 .video iframe {
-    width: 1065px;
-    height: 580px;
-    margin: auto auto;
+    width: 1015px;
+    height: 540px;
 }
 
 section.profile-container {
@@ -168,6 +170,7 @@ section.profile-container {
     background: #DED6C8;
     border-radius: 15px;
     margin: 15px auto;
+    box-shadow: 5px 5px #BD9965;
 }
 
 .profile .card .card-content {
@@ -212,5 +215,5 @@ section.profile-container {
 .swiper {
     width: 90%;
     height: 100%;
-    padding: 20px 0;
+    padding: 20px 10px;
 }

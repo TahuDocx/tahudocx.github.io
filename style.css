@@ -69,6 +69,7 @@ section.hero-section {
 .heroo .text {
     margin: auto 0;
     padding: 10px;
+    text-align: right;
 }
 
 
@@ -267,6 +268,7 @@ section.profile-container {
 
     .heroo .text {
         width: 100%;
+        text-align: left;
     }
 
     .heroo .img {
@@ -291,11 +293,6 @@ section.profile-container {
     .heroo h1 {
         font-size: 30px;
     }
-
-    .heroo p {
-        font-size: 12px;
-    }
-    
 }
 
 @media only screen and (max-width: 450px) {

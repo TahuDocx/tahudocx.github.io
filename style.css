@@ -64,7 +64,7 @@ section.hero-section {
 
 .heroo .text {
     margin: auto 0;
-    width: 650px;
+    padding: 10px;
 }
 
 
@@ -73,6 +73,7 @@ section.hero-section {
     font-weight: 700;
     font-size: 50px;
     margin: 0;
+    margin-bottom: 10px;
 
     color: #563B2A;
 }
@@ -82,17 +83,20 @@ section.hero-section {
     font-weight: 500;
     font-size: 20px;
     margin: 0;
-    width: 550px;
 
     color: #563B2A;
 }
 
 .heroo .img {
-    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160%;
 }
 
 .heroo .img img {
-    height: 350px;
+    margin: 10px;
+    width: 100%;
 }
 
 .hero .line {
@@ -123,8 +127,8 @@ section.video-section {
 }
 
 .video iframe {
-    width: 1015px;
-    height: 540px;
+    width: 100%;
+    height: 567px;
 }
 
 section.profile-container {
@@ -216,4 +220,77 @@ section.profile-container {
     width: 90%;
     height: 100%;
     padding: 20px 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .heroo h1 {
+        font-size: 35px;
+    }
+
+    .heroo p {
+        font-size: 15px;
+    }
+
+    .video iframe {
+        height: 432px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    nav .logo {
+        font-size: 35px;
+    }
+
+    section.filler {
+        height: 71px;
+    }
+
+    .heroo {
+        display: block;
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    .heroo h1 {
+        text-align: center;
+    }
+
+    .heroo .text {
+        width: 100%;
+    }
+
+    .heroo .img {
+        width: 100%;
+    }
+
+    .heroo .img img {
+        width: 80%;
+    }
+
+    .video iframe {
+        height: 288px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .heroo h1 {
+        font-size: 30px;
+    }
+
+    .heroo p {
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .video iframe {
+        height: 90px;
+    }
 }

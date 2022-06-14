@@ -12,7 +12,7 @@ body {
 
 .wrapper {
     max-width: 90%;
-    margin: 0 50px;
+    margin: 0 100px;
 }
 
 header {
@@ -179,6 +179,7 @@ section.profile-container {
     border-radius: 15px;
     margin: 15px auto;
     box-shadow: 5px 5px #BD9965;
+    margin-bottom: 25px;
 }
 
 .profile .card .card-content {
@@ -212,13 +213,13 @@ section.profile-container {
     grid-template-columns: auto auto auto auto auto;
 } */
 
-.profile .vline {
+/* .profile .vline {
     width: 10px;
     height: 332px;
     border-radius: 5px;
     background: #BD9965;
     margin: auto auto;
-}
+} */
 
 .swiper {
     width: 90%;
@@ -241,6 +242,10 @@ section.profile-container {
 }
 
 @media only screen and (max-width: 800px) {
+
+    .wrapper {
+        margin: 0 50px;
+    }
 
     nav .logo {
         font-size: 35px;
@@ -275,6 +280,10 @@ section.profile-container {
     .video iframe {
         height: 288px;
     }
+
+    .profile .card {
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -293,12 +302,16 @@ section.profile-container {
     nav {
         margin: 0 0;
     }
-    
+
     .wrapper {
         max-width: 100%;
     }
 
     .video iframe {
-        height: 90px;
+        height: 153px;
+    }
+
+    .profile .card {
+        margin-bottom: 70px;
     }
 }

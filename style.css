@@ -15,6 +15,17 @@ body {
     margin: 0 100px;
 }
 
+.wrapper h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+.wrapper h3 {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
 header {
     padding: 15px 0;
     width: 100%;
@@ -145,6 +156,10 @@ section.profile-container {
     /* background: #72C2A9; */
 }
 
+section.profile-container .wrapper h2 {
+    color: #2F433D;
+}
+
 .profile .card .image {
     height: 140px;
     width: 140px;
@@ -235,6 +250,116 @@ section.profile-container {
     margin: 0;
 }
 
+section.photo-section {
+    background-color: #2F433D;
+    padding: 25px 0;
+}
+
+section.photo-section .wrapper h2 {
+    color: #CFF1E7;
+}
+
+.photos-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+    background-color: #72C2A9;
+}
+
+.photos-container .photos {
+    padding: 10px;
+}
+
+.photos-container p {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #2F433D;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.photos-container img {
+    padding: 5px;
+    background: #2F433D;
+    margin: auto;
+    width: 100%;
+}
+
+section.timeline-section {
+    padding: 25px 0;
+}
+
+section.timeline-section .wrapper h2 {
+    color: #2F433D;
+}
+
+section.timeline-section .wrapper h3 {
+    color: #2F433D;
+}
+
+.timeline-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.timeline-content {
+    margin: 10px 0;
+}
+
+.timeline-container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2F433D;
+    padding: 0 25px;
+    margin: 10px 0;
+}
+
+footer {
+    background: #383431;
+    padding: 50px 0;
+    color: #F1F1F1;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+footer .wrapper h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 10px 0;
+    color: #72C2A9;
+}
+
+footer ul {
+    margin: 10px 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #F1F1F1;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 13px;
+    opacity: 0.03;
+}
+
 @media only screen and (max-width: 1050px) {
     .heroo h1 {
         font-size: 35px;
@@ -253,6 +378,10 @@ section.profile-container {
 
     .wrapper {
         margin: 0 50px;
+    }
+
+    .wrapper h2 {
+        font-size: 30px;
     }
 
     nav .logo {
@@ -300,9 +429,17 @@ section.profile-container {
     .heroo h1 {
         font-size: 30px;
     }
+
+    .photos-container {
+        grid-template-columns: auto;
+    }
 }
 
 @media only screen and (max-width: 615px) {
+
+    .wrapper h2 {
+        font-size: 23px;
+    }
 
     .profile .card {
         margin-bottom: 60px;

@@ -295,6 +295,13 @@ section.profile-container {
     }
 }
 
+@media only screen and (max-width: 615px) {
+
+    .profile .card {
+        margin-bottom: 60px;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     nav {
         margin: 0 0;
@@ -310,5 +317,11 @@ section.profile-container {
 
     .profile .card {
         margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 267px) {
+    .profile .card {
+        margin-bottom: 100px;
     }
 }

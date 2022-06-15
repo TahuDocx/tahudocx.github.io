@@ -228,6 +228,13 @@ section.profile-container {
     padding: 20px 10px;
 }
 
+.profile .card .media-icons .popoutsm button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 @media only screen and (max-width: 1050px) {
     .heroo h1 {
         font-size: 35px;

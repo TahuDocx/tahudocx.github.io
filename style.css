@@ -19,6 +19,7 @@ body {
     text-align: center;
     margin: 10px 0;
     font-size: 35px;
+    padding: 15px 0;
 }
 
 .wrapper h3 {
@@ -62,6 +63,8 @@ section.filler {
 
 section.hero-section {
     background: #72C2A9;
+    /* background-image: url(bghero.png);
+    background-size: cover; */
 }
 
 .hero {
@@ -87,7 +90,7 @@ section.hero-section {
 .heroo h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     margin: 0;
     margin-bottom: 10px;
 
@@ -112,7 +115,7 @@ section.hero-section {
 
 .heroo .img img {
     margin: 10px;
-    width: 100%;
+    width: 95%;
 }
 
 .hero .line {
@@ -260,17 +263,25 @@ section.photo-section .wrapper h2 {
 }
 
 .photos-container {
+    padding: 25px;
+}
+
+.photos-content {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 15px;
     background-color: #72C2A9;
 }
 
-.photos-container .photos {
+.photos-content .photos {
     padding: 10px;
+    display: block;
 }
 
-.photos-container p {
+.photos-content.more {
+    display: none;
+}
+
+.photos-content p {
     font-family: "Raleway", sans-serif;
     text-align: center;
     font-weight: 600;
@@ -279,11 +290,56 @@ section.photo-section .wrapper h2 {
     margin: 5px 0;
 }
 
-.photos-container img {
+.photos-content img {
     padding: 5px;
     background: #2F433D;
     margin: auto;
     width: 100%;
+}
+
+.photo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.photo-button button {
+    padding: 15px 20px;
+    width: 70%;
+    background: #DED6C8;
+    border: 0;
+    margin: 10px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #563B2A;
+}
+
+.photo-button button#more-photo1 {
+    display: block;
+}
+
+.photo-button button#more-photo2 {
+    display: none;
+}
+
+.photo-button button#more-photo3 {
+    display: none;
+}
+
+.photo-button button#more-photo4 {
+    display: none;
+}
+
+.photo-button button#more-photo5 {
+    display: none;
+}
+
+.photo-button button#less-photo {
+    display: none;
 }
 
 section.timeline-section {
@@ -296,6 +352,7 @@ section.timeline-section .wrapper h2 {
 
 section.timeline-section .wrapper h3 {
     color: #2F433D;
+    text-align: center;
 }
 
 .timeline-wrapper {
@@ -309,13 +366,23 @@ section.timeline-section .wrapper h3 {
 
 .timeline-container {
     display: grid;
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 6fr 7fr;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #2F433D;
     padding: 0 25px;
     margin: 10px 0;
+}
+
+.timeline-container .date {
+    text-align: right;
+    margin: 0 10px;
+}
+
+.timeline-container .timeline {
+    text-align: left;
+    margin: 0 10px;
 }
 
 footer {
@@ -375,7 +442,6 @@ footer p {
 }
 
 @media only screen and (max-width: 800px) {
-
     .wrapper {
         margin: 0 50px;
     }
@@ -426,6 +492,10 @@ footer p {
     .timeline-wrapper {
         grid-template-columns: auto;
     }
+
+    footer .links-container {
+        grid-template-columns: auto auto;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -434,8 +504,20 @@ footer p {
         font-size: 30px;
     }
 
-    .photos-container {
+    .photos-content {
         grid-template-columns: auto;
+    }
+
+    .timeline-container {
+        display: block;
+    }
+
+    .timeline-container .timeline {
+        margin: 0 25px 10px;
+    }
+
+    .timeline-container .date {
+        text-align: left;
     }
 }
 

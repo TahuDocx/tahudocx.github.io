@@ -1,0 +1,45 @@
+section.filler {
+    background: #CFF1E7;
+    height: 89px;
+}
+
+section.profile-container {
+    padding-bottom: 50px;
+}
+
+.profile .content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+}
+
+.profile .card.easter {
+    width: 100%;
+    height: min-content;
+    margin: auto auto;
+    transform: translateX(-2.5px);
+}
+
+.profile .vline {
+    width: 10px;
+    height: 85%;
+    border-radius: 5px;
+    background: #BD9965;
+    margin: auto 30px;
+}
+
+.profile .hline {
+    width: 85%;
+    height: 10px;
+    background: #BD9965;
+    border-radius: 10px;
+    /* margin: 40px auto; */
+    margin: 30px auto;
+}
+
+.profile .blank {
+    width: 50%;
+    height: 50%;
+    transform: rotate(45deg);
+    margin: auto auto;
+    background: #BD9965;
+}

@@ -122,6 +122,13 @@ svg{
   padding: 1rem 4rem;
 }
 
+
+.grid{
+  display: grid;
+}
+.grid.center{
+  justify-items: center;
+}
 .flex{
   display: flex;
   height: fit-content;
@@ -129,27 +136,31 @@ svg{
 .flex.col{
   flex-direction: column;
 }
-.flex.center-center{
+.flex.center-center, .grid.center-center{
   align-items: center;
   justify-content: center;
 }
-.flex.center-between{
+.flex.center-between, .grid.center-between{
   align-items: center;
   justify-content: space-between;
 }
-.flex.center-around{
+.flex.center-around, .grid.center-around{
   align-items: center;
   justify-content: space-around;
 }
-.flex.center-evenly{
+.flex.center-evenly, .grid.center-evenly{
   align-items: center;
   justify-content: space-evenly;
 }
-.flex.start-center{
+.flex.start-center, .grid.start-center{
   align-items: flex-start;
   justify-content: space-evenly;
 }
-.flex.stretch{
+.flex.end-center, .grid.end-center{
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.flex.stretch, .grid.stretch{
   align-self: stretch;
 }
 
@@ -161,6 +172,13 @@ svg{
 
 }
 
+.hfull {
+  height: calc(100vh - 4.25rem);
+}
+.break {
+  height: 1.5rem;
+}
+
 .tr {
   text-align: right;
 }
@@ -168,7 +186,45 @@ svg{
   text-align: center;
 }
 
+.card {
+  padding: 2rem;
+  background-color: var(--yellow-2);
+  border-radius: 2rem;
+  border: solid 1px var(--yellow-2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  gap: 1rem;
+}
+.card:hover {
+  border: solid 1px var(--yellow-a5);
+}
+/* .card .text{
+  padding: 1.5rem 2rem 2rem;
+} */
+
+.button {
+  padding: .25rem 1.5rem;
+  border-radius: .5rem;
+  background-color: var(--yellow-9);
+  /* color: var(--); */
+  /* margin: .25rem .5rem; */
+  /* margin: .5rem; */
+}
+a.button:hover {
+  text-decoration: none;
+  filter: drop-shadow(0 0 .5rem var(--yellow-a5));
+}
+
+
 /* clock */
+.clock {
+  position: sticky;
+  top: 0;
+  background-color: var(--yellow-1);
+}
 .clock .wrapper{
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -180,6 +236,9 @@ svg{
 /* nav */
 .nav {
   background-color: var(--yellow-10);
+  position: sticky;
+  top: 30px;
+  z-index: 999;
 }
 .nav .wrapper{
   padding-top: .75rem;
@@ -232,7 +291,7 @@ svg{
   padding: .5rem;
 }
 .footer .links-container{
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .footer .links {
   gap: .5rem;

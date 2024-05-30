@@ -1,0 +1,31 @@
+.proj-section.grid{
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* margin: 2rem; */
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.proj-section .card img {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  border: solid 1px var(--yellow-9);
+}
+
+/* .proj-section .card {
+  gap: 1rem;
+} */
+
+/* .proj-section .card .text { */
+  /* padding: 0 1rem; */
+  /* gap: .25rem; */
+/* } */
+
+.proj-section .card .button {
+  margin: .75rem .25rem 0;
+}
+
+.proj-section.grid .head {
+  grid-column: 1/3;
+}

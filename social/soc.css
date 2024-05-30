@@ -1,0 +1,14 @@
+.soc-section{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.soc-section .head, .full {
+  grid-column: 1/3;
+}
+
+.soc-section .embed {
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+.bio-section {
+  grid-template-columns: 1fr calc(2 * 1rem + 1px) 1fr;
+  /* grid-template-columns: auto calc(2 * 1rem + 1px) auto; */
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  grid-row-gap: .5rem;
+}
+
+.bio-section .line {
+  display: flex;
+  width: 1px;
+  background-color: var(--yellow-contrast);
+  height: 100%;
+  /* margin: 16px; */
+  /* margin-bottom: 1rem; */
+}
+
+.bio-section .outer {
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.bio-section .head {
+  grid-column: 1/4;
+  /* margin-top: rem; */
+}
+
+/* .bio-section .break {
+  height: 1.5rem;
+} */
+.bio-section .full {
+  grid-column: 1/4;
+}
